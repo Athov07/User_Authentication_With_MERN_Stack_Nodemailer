@@ -37,7 +37,7 @@ const ResetPassword = () => {
       setSuccess(res.data.message);
 
       setTimeout(() => {
-        navigate("/login");
+        navigate("/");
       }, 2000);
     } catch (err) {
       setError(err.response?.data?.message || "Something went wrong");
