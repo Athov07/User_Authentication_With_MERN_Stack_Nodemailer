@@ -4,6 +4,9 @@ const generateOTP = require("../utils/generateOTP");
 const sendEmail = require("../config/mailer");
 const jwt = require("jsonwebtoken");
 
+
+
+// User Registration
 exports.registerUser = async (req, res) => {
   try {
     const { name, email, password } = req.body;

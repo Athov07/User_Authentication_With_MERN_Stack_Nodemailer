@@ -44,7 +44,7 @@ export const resendOTP = async (data) => {
   }
 };
 
-
+// User Logout 
 export const logoutUser = async () => {
   try {
     const refreshToken = localStorage.getItem("refreshToken");
